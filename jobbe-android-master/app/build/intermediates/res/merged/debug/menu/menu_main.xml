@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/switch_profile"
+        android:orderInCategory="1"
+        android:icon="@mipmap/menu_switch_icon"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:orderInCategory="11111"
+        android:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_settings"
+                android:orderInCategory="2"
+                android:title="Profilo"
+                android:showAsAction="withText" />
+
+            <item android:id="@+id/action_faq"
+                android:orderInCategory="3"
+                android:title="FAQs"
+                android:showAsAction="withText" />
+        </menu>
+    </item>
+</menu>

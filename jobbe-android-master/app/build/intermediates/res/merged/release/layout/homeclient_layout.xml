@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_placeholder">
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_placeholder">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.division70.jobbe.jobbe_git.HomeClientActivity"
+                android:id="@+id/requests_relative">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Le tue richieste"
+                    android:id="@+id/aggiudicate_tv"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="false"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/jobbe_white"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aggiudicate_tv"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/requests_linearlayout">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/empty_layout"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textView77" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Al momento ci sono"
+                        android:id="@+id/textView88"
+                        android:textColor="#FFFFFF"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="245"
+                        android:id="@+id/textView89"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/jobbe_light_blue"
+                        android:textSize="60dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/textView88" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="professionisti vicino a te"
+                        android:id="@+id/textView90"
+                        android:layout_below="@+id/textView89"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#FFFFFF" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView90"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/linearLayout2" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageView28"
+                            android:background="@drawable/arte_icon"
+                            android:layout_margin="5dp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageView29"
+                            android:background="@drawable/assistenzadomiciliare_icon"
+                            android:layout_margin="5dp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageView30"
+                            android:background="@drawable/eventi_icon"
+                            android:layout_margin="5dp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageView31"
+                            android:background="@drawable/manutenzioni_icon"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Benvenuto"
+                    android:id="@+id/textView64"
+                    android:layout_marginTop="37dp"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Jobbe è lo strumento perfetto per trovare soluzioni ai tuoi problemi."
+                    android:id="@+id/textView77"
+                    android:layout_below="@+id/textView64"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="15dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_layout"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Di cosa hai bisogno?"
+            android:id="@+id/newrequestbutton"
+            android:textColor="@color/jobbe_white"
+            android:background="@drawable/blue_selector"
+            android:layout_alignParentBottom="false"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_layout">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tooltip_layout"
+        android:layout_above="@+id/button_layout"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView35"
+            android:src="@drawable/tooltip_client_image"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

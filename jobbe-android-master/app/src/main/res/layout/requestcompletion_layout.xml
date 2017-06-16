@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_layout"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView5" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/job_requested_layout">
+
+                    <com.division70.jobbe.jobbe_git.RoundedImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/job_pic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/request_job"
+                        android:layout_margin="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/job_pic"
+                        android:textStyle="bold"
+                        android:text="Animatore" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/job_requested_layout"
+                    android:id="@+id/request_rel_layout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/loc_layout">
+
+                        <View
+                            android:background="#c4c4c4"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/location_rel_layout"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView21"
+                                android:src="@drawable/location"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Dove"
+                                android:id="@+id/textView32"
+                                android:layout_toRightOf="@+id/imageView21"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Inserisci una posizione"
+                                android:id="@+id/posizione_label"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/textView32"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/jobbe_light_blue"
+                                android:singleLine="true"
+                                android:layout_toLeftOf="@+id/imageView22"
+                                android:gravity="right" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView22"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/arrow"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <View
+                            android:background="#c4c4c4"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/tim_layout"
+                        android:layout_below="@+id/loc_layout"
+                        android:layout_marginTop="15dp">
+
+                        <View
+                            android:background="#c4c4c4"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView23"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/clock" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Quando"
+                                android:id="@+id/textView85"
+                                android:layout_toRightOf="@+id/imageView23"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Entro una settimana"
+                                android:id="@+id/tempistica_label"
+                                android:layout_toRightOf="@+id/textView85"
+                                android:layout_toLeftOf="@+id/imageView24"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/jobbe_light_blue"
+                                android:gravity="right" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/imageView24"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/arrow" />
+                        </RelativeLayout>
+
+                        <View
+                            android:background="#c4c4c4"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/request_info_layout"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/request_rel_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="TITOLO RICHIESTA"
+                        android:id="@+id/textView17"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/jobbe_light_blue" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/request_title"
+                        android:layout_below="@+id/textView17"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textCapSentences"
+                        android:hint="@string/req_creation_title_hint"
+                        android:textSize="13dp"
+                        android:singleLine="true"
+                        android:maxLength="30" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="DESCRIZIONE"
+                        android:id="@+id/textView18"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/request_title"
+                        android:textColor="@color/jobbe_light_blue" />
+
+                    <!--
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/request_description"
+                        android:layout_below="@+id/textView18"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/req_creation_desc_hint"
+                        android:textSize="13dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/request_description"
+                        android:layout_below="@+id/textView18"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textCapSentences"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/req_creation_desc_hint"
+                        android:textSize="13dp"
+                        android:lines="1"
+                        android:scrollHorizontally="false" />
+                    -->
+
+                    <com.division70.jobbe.jobbe_git.ActionEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/request_description"
+                        android:layout_below="@+id/textView18"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textCapSentences"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/req_creation_desc_hint"
+                        android:textSize="13dp"
+                        android:lines="1"
+                        android:scrollHorizontally="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/assignedTooltipLayout"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:id="@+id/fakeViewWhen"
+                        android:layout_marginTop="150dp"
+                        android:visibility="invisible"></RelativeLayout>
+
+                    <com.venmo.view.TooltipView
+                        android:id="@+id/tooltipWhen"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="8dp"
+                        android:text="Clicca per modificare dove richiedi l'intervento e quando"
+                        android:textColor="@color/jobbe_white"
+                        android:gravity="center_vertical"
+                        app:tooltipColor="#F27B2C"
+                        app:anchoredView="@+id/fakeViewWhen"
+                        app:cornerRadius="4dp"
+                        app:arrowLocation="top"
+                        app:arrowAlignment="end"
+                        android:visibility="gone"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/fakeViewWhen" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:id="@+id/fakeViewTitle"
+                        android:layout_marginTop="240dp"
+                        android:visibility="invisible"></RelativeLayout>
+
+                    <com.venmo.view.TooltipView
+                        android:id="@+id/tooltipTitle"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="8dp"
+                        android:text="Usa un titolo semplice, per far capire quello che ti serve"
+                        android:textColor="@color/jobbe_white"
+                        android:gravity="center_vertical"
+                        app:tooltipColor="#F27B2C"
+                        app:anchoredView="@+id/fakeViewTitle"
+                        app:cornerRadius="4dp"
+                        app:arrowLocation="top"
+                        app:arrowAlignment="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/fakeViewTitle" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:id="@+id/fakeViewDesc"
+                        android:layout_marginTop="350dp"
+                        android:visibility="invisible"></RelativeLayout>
+
+                    <com.venmo.view.TooltipView
+                        android:id="@+id/tooltipDesc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="8dp"
+                        android:text="Descrivi al meglio la tua richiesta"
+                        android:textColor="@color/jobbe_white"
+                        android:gravity="center_vertical"
+                        app:tooltipColor="#F27B2C"
+                        app:anchoredView="@+id/fakeViewDesc"
+                        app:cornerRadius="4dp"
+                        app:arrowLocation="top"
+                        app:arrowAlignment="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="40dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_below="@+id/fakeViewDesc" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button_layout"
+        android:layout_below="@+id/top_layout">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fine"
+            android:id="@+id/end_request"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/jobbe_white"
+            android:background="@drawable/blue_selector"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

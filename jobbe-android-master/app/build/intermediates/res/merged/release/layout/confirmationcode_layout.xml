@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_recap_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Numero inserito"
+            android:id="@+id/textView8"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/phone_textview"
+            android:layout_below="@+id/textView8"
+            android:textColor="#777777"
+            android:text="+39 123456789" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Modifica"
+            android:id="@+id/modify_link"
+            android:layout_toRightOf="@+id/phone_textview"
+            android:layout_alignTop="@+id/phone_textview"
+            android:textColor="@color/jobbe_light_blue"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentEnd="false"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:maxLength="4"
+        android:id="@+id/code_field"
+        android:layout_marginTop="40dp"
+        android:editable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/num_recap_layout" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_field"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/jobData_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Inserisci il codice ricevuto via SMS per verifica."
+            android:id="@+id/textView39"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="3:00"
+            android:id="@+id/timer_textView"
+            android:layout_below="@+id/textView39"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/jobbe_light_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Invia di nuovo"
+            android:id="@+id/sendagain_textView"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:textColor="@color/jobbe_light_blue"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView39"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conferma"
+        android:id="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/blue_selector"
+        android:textColor="@color/jobbe_white"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_alignParentEnd="false"
+        android:background="#CCffffff"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

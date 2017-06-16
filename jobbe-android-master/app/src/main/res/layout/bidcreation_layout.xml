@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_relative">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/side_margin"
+        android:id="@+id/main_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Riepilogo informazioni"
+                    android:id="@+id/textView60"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/client_info_layout"
+                    android:layout_below="@+id/textView60"
+                    android:layout_marginTop="@dimen/side_margin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/client_layout"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/imageView7"
+                            android:src="@drawable/user"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/client_name"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imageView7"
+                            android:layout_marginLeft="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/client_layout"
+                        android:id="@+id/address_layout"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/imageView8"
+                            android:src="@drawable/location"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/req_address"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imageView8"
+                            android:layout_marginLeft="15dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/address_layout"
+                        android:id="@+id/timing_layout"
+                        android:layout_margin="3dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/imageView9"
+                            android:src="@drawable/clock"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/req_timing"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imageView9"
+                            android:layout_marginLeft="15dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Prezzo"
+                    android:id="@+id/textView61"
+                    android:layout_below="@+id/client_info_layout"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/side_margin" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/bid_price"
+                    android:layout_below="@+id/textView61"
+                    android:hint="€"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <com.venmo.view.TooltipView
+                    android:id="@+id/tooltip"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp"
+                    android:text="Inserisci il prezzo indicativo e specifica se è a corpo o a misura. Se è a misura, indica la misura nei dettagli."
+                    android:textColor="@color/jobbe_white"
+                    app:tooltipColor="#F27B2C"
+                    app:anchoredView="@id/bid_price"
+                    app:cornerRadius="4dp"
+                    android:visibility="gone"
+                    android:layout_above="@+id/bid_price" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/bid_price"
+                    android:layout_centerHorizontal="true"
+                    android:weightSum="1"
+                    android:id="@+id/switch_layout"
+                    android:layout_marginTop="@dimen/side_margin">
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A Corpo"
+                        android:id="@+id/type_corpo"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentEnd="false"
+                        android:layout_toLeftOf="@+id/type_misura"
+                        android:layout_weight="0.5"
+                        android:enabled="true"
+                        android:background="#bedadb"
+                        android:layout_marginRight="5dp" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A Misura"
+                        android:id="@+id/type_misura"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.5"
+                        android:enabled="true"
+                        android:background="#e5e8e9" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Dettagli dell&apos;offerta"
+                    android:id="@+id/textView62"
+                    android:layout_below="@+id/switch_layout"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/side_margin" />
+
+                <com.division70.jobbe.jobbe_git.ActionEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bid_details"
+                    android:layout_below="@+id/textView62"
+                    android:hint="@string/bid_creation_details_hint"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginTop="@dimen/side_margin"
+                    android:scrollHorizontally="false" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons_layout"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fine"
+            android:id="@+id/bid_confirm_button"
+            android:background="@drawable/blue_selector"
+            android:textColor="@color/jobbe_white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/side_margin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_alignParentEnd="false"
+        android:background="#CCffffff"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

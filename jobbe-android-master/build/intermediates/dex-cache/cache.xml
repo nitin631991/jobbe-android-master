@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.2.1_89c5859ea2bc5310c166e712fa42c477396bb22a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="991238379b164b1bf9b198b0bc0e07defdcb4cd7">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_691fe1b34a95d09b5c5c0d81f6f14348ff73cfd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-8.4.0_2d437976eaaf2323e71a4592036c3f1b65b03bc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-8.4.0_7bb82ce276d3edcdfe54589b358ea378b1e10b83/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-8.4.0_531936109f2778fe146b76a93ad861b8c3a990ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-8.4.0_e100581b6cf669b0b92ff376fdc90ed06cbaf85f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_0f741eadf78b395b99cabb6efdc52e36ff21477a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_e7f00dd683a8540aa4b73176db9aff6b59047105/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-8.4.0_65b093985da0666922d1d40d137dc2db237a0e63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-8.4.0_092fa75b7f6024c41c2e147c985255512f6720cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_12886321f8552275eb5d500970db637475291a00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_be6beed805049c4f9df43b13f5e1e517510beb59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_b80bee1e0a8223a2191eaae4ca6d37d5abb6003b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-8.4.0_e659f84b22b343b3ecdb2af3ee457a075d696957/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.2.1_acdbc802323abc4a4c20a0b40e2f112a0ad3c7e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.2.1_0881871c9ed32e54618ec768f268851c8645f43f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-measurement-8.4.0_45b4aea04fc48c1e9a314ea6bce344545203f227/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-8.4.0_339584a33b470378974ea94648dd48da441b2c1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_40585085fc31cb1c1c51c5309a62715de4a8bd7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-8.4.0_ea0346636c1c01bb359360de71cad5e8b4b80fbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-8.4.0_d2a302f3a342bfbb5de2cd5bf26ada2ba51a6ab8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.venmo.view.tooltip/tooltip/0.1.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="148c15a02f0f14a6e02a391b4d1d44ab7ee799ba">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.venmo.view.tooltip-tooltip-0.1.2_cf52a23e905438dc433d55f5d6cac76a6b49d47d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-8.4.0_6272dd5acf7edfca4c2d1a79f4b7cc668d841f02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-8.4.0_7a473addfa0055c7affbeab702c60aabcc7b74fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-8.4.0_0e4154803bc0eeceaa6a1f30e06290a056746683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-8.4.0_9558f172aae1fb2fc1513124b9545d26255c7d2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_90e80bdf09b133880712dac80887b12bb9cc532e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-8.4.0_ed061bdb8517c84a96a34a56c03ac6b87ba951cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/usr/local/adt-bundle-linux-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.2.1_d644236879aabbfafefb44f69654a2824cf508ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.2.1_89824af1f91df8f6ee005203e828cc60e4c0f338/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gst-10056/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.0/58a7d54b6a4f28be11f0cecec93097eddf473e6f/parse-android-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="58a7d54b6a4f28be11f0cecec93097eddf473e6f">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/parse-android-1.13.0_4027ede3dad4e0905cfb972d3deffed2d5734493/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-8.4.0_442764d20cd4b92ee66155b5ad5df25cf05ecb9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gst-10056/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_07671e80afe976ef89be7106830aea7b46d80ccd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-8.4.0_2e80129576d41d4091fe237b3a8464008057c2cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-8.4.0_16b3883584447acc1067b1e1fce6956815168989/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/gst-10056/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_8895aa488925443cd167365abdbc24abaa5b4a38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.2.1_f092c09789c67b6c60f15ec1f1755e1710f4bc43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="514ebaa2ffe558883863d06c74385a1e89322333">
+        <dex dex="/media/gst-10056/Dev_GST/Dev_Studio/jobbe-android-Migration/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ae43365f34cb5b1aba96c76e403a80b6fd4c6ef9/classes.dex" />
+    </item>
+
+</items>

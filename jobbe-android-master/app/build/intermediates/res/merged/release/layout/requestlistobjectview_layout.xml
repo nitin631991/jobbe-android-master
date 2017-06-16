@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/request_height"
+    android:background="@drawable/request_list_selector">
+
+    <ImageView
+        android:layout_width="@dimen/job_cat_lato"
+        android:layout_height="@dimen/job_cat_lato"
+        android:id="@+id/photo_iv"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/arte_icon" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/photo_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/info_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Titolo lavoro"
+            android:id="@+id/jobTitle_tv"
+            android:textColor="@color/jobbe_white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Stato del lavoro"
+            android:id="@+id/timing_tv"
+            android:layout_below="@+id/jobTitle_tv"
+            android:textColor="@color/jobbe_light_blue"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Numero proposte"
+            android:id="@+id/numProp_tv"
+            android:layout_alignStart="@+id/timing_tv"
+            android:layout_below="@+id/timing_tv"
+            android:textColor="#8c8c8c"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView15"
+        android:src="@drawable/arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@+id/imageView15"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/unseen_layout">
+
+        <com.division70.jobbe.jobbe_git.RoundedImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/category_pic"
+            android:src="@drawable/overlay"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/unseen_tv"
+            android:textColor="@color/jobbe_white"
+            android:layout_centerInParent="true"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/jobbe_transparent_violet"
+        android:layout_width = "fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/info_layout" />
+
+</RelativeLayout>

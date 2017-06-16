@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/request_list_selector">
+
+    <com.division70.jobbe.jobbe_git.RoundedImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/photo_iv"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/placeholder_client"
+        android:layout_marginLeft="15dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/photo_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/info_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Titolo lavoro"
+            android:id="@+id/jobTitle_tv"
+            android:textSize="15dp"
+            android:textColor="@color/jobbe_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Timing del lavoro"
+            android:id="@+id/timing_tv"
+            android:textSize="15dp"
+            android:layout_below="@+id/jobTitle_tv"
+            android:textColor="@color/jobbe_light_blue" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView16"
+        android:src="@drawable/arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:background="@color/jobbe_transparent_violet"
+        android:layout_width = "fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/info_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        android:id="@+id/disable_overlay"></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp">
+
+    <com.division70.jobbe.jobbe_git.RoundedImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/suppphoto_iv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/suppphoto_iv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/nome_tv"
+            android:text="Mario Rossi"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="24"
+            android:id="@+id/numrating_tv"
+            android:layout_below="@+id/nome_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:textColor="#777777" />
+
+        <RatingBar style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_rb"
+            android:layout_toRightOf="@+id/numrating_tv"
+            android:layout_alignTop="@+id/numrating_tv"
+            android:layout_marginLeft="10dp"
+            android:rating="3"
+            android:progressTint="@color/jobbe_ratings"
+            android:layout_alignBottom="@+id/numrating_tv"
+            android:stepSize="1"
+            android:secondaryProgressTint="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Professionista"
+            android:id="@+id/supptype_tv"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/numrating_tv"
+            android:paddingRight="10dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="100€"
+                android:id="@+id/price_tv"
+                android:layout_centerHorizontal="true"
+                android:textColor="#777777" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="a corpo"
+                android:id="@+id/pricetype_tv"
+                android:layout_below="@+id/price_tv"
+                android:layout_centerHorizontal="true"
+                android:textColor="#777777" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView11"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33000000"
+        android:id="@+id/disable_overlay"></RelativeLayout>
+</RelativeLayout>

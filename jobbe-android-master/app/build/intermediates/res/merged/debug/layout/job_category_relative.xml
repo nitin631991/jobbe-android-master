@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="110dp"
+    android:layout_height="150dp"
+    android:padding="10dp">
+
+    <com.division70.jobbe.jobbe_git.RoundedImageView
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:id="@+id/category_overlay"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/overlay"
+        android:layout_alignParentTop="true" />
+
+    <com.division70.jobbe.jobbe_git.RoundedImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/category_pic"
+        android:src="@drawable/arte_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Arte"
+        android:id="@+id/category_name"
+        android:layout_below="@+id/category_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:textColor="@color/jobbe_white" />
+</RelativeLayout>

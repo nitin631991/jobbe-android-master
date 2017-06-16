@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_login"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="false"
+            android:paddingTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Jobbe"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/jobbe_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Save time, enjoy life"
+                android:id="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView"
+                android:textColor="@color/jobbe_white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrati"
+                android:id="@+id/signup_button"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blue_selector"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accedi"
+                android:id="@+id/login_button"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/jobbe_white"
+                android:background="@drawable/transparent_selector"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/change_number_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Hai cambiato numero di telefono?"
+                android:id="@+id/change_phone_number"
+                android:textColor="@color/jobbe_light_blue"
+                android:gravity="center"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:button="@drawable/apptheme_btn_check_holo_light"/>
+
+   <!--         <RelativeLayout
+                android:layout_toRightOf="@+id/chckBox"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/disclaimer_line1"
+                    android:layout_toRightOf="@+id/chckBox"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/jobbe_white"
+                    android:textColorLink="@color/jobbe_light_blue"
+                    android:text="@string/first_page_disclaimer_line_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/disclaimer_line2"
+                    android:layout_toRightOf="@+id/chckBox"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/jobbe_white"
+                    android:textColorLink="@color/jobbe_light_blue"
+                    android:text="@string/first_page_disclaimer_line_2"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/disclaimer_line1" />
+          <!--  </RelativeLayout>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

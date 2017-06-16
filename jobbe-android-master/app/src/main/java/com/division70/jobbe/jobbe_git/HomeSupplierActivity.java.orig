@@ -1,0 +1,305 @@
+package com.division70.jobbe.jobbe_git;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
+
+import com.parse.FindCallback;
+import com.parse.ParseCloud;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+
+public class HomeSupplierActivity extends Activity {
+    private ArrayList<ParseObject> requests;
+    private ParseUser user;
+    private LinearLayout aggiudicate_List;
+    private LinearLayout inviate_List;
+    private LinearLayout inattesa_List;
+    private SwipeRefreshLayout swipeView;
+    private RelativeLayout aggiudicateRelative;
+    private RelativeLayout inviateRelative;
+    private RelativeLayout inattesaRelative;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.homesupplier_layout);
+        hideLists();
+
+        getUserRequests(false);
+
+        setRefreshView();
+
+        //fillLayout();
+
+    }
+
+    private void hideLists(){
+        aggiudicateRelative = (RelativeLayout) findViewById(R.id.aggiudicate_rl);
+        inviateRelative = (RelativeLayout) findViewById(R.id.inviate_rl);
+        inattesaRelative = (RelativeLayout) findViewById(R.id.inattesa_rl);
+
+        aggiudicateRelative.setVisibility(View.GONE);
+        inviateRelative.setVisibility(View.GONE);
+        inattesaRelative.setVisibility(View.GONE);
+
+    }
+
+    private void getUserRequests(final boolean refresh){
+        requests = new ArrayList<>();
+        user = ParseUser.getCurrentUser();
+        try {
+            user.fetch();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        ArrayList<String> requestsId = (ArrayList<String>) user.get("matchingRequests");
+        for (String id: requestsId) {
+            ParseObject x = ParseObject.createWithoutData("Request",id);
+            requests.add(x);
+        }
+
+        ParseObject.fetchAllInBackground(requests, new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> list, ParseException e) {
+                Log.i("requests", requests.size() + "");
+                if (refresh){
+                    aggiudicate_List.removeAllViews();
+                    inviate_List.removeAllViews();
+                    inattesa_List.removeAllViews();
+                }
+                fillLayout();
+            }
+        });
+
+    }
+
+    private void fillLayout(){
+        aggiudicate_List = (LinearLayout) findViewById(R.id.aggiudicate_linearlayout);
+        inviate_List = (LinearLayout) findViewById(R.id.inviate_linearlayout);
+        inattesa_List = (LinearLayout) findViewById(R.id.inattesa_linearlayout);
+
+        int agg_number = 0;
+        int inv_number = 0;
+        int inatt_number = 0;
+
+        for (ParseObject request : requests){
+            int state = request.getInt("state");
+            //Non metto l'oggetto nella lista se:
+<<<<<<< HEAD
+            if(state == 3 || state == 4 || state == 5 || state == 6) continue;      // (1) Il lavoro è terminato, annullato o incompleto
+=======
+            if(state == 4 || state == 5 || state == 6) continue;      // (1) Il lavoro è terminato, annullato o incompleto
+>>>>>>> 05b0c35941805bdbeb83d9cfa0a071b3c14ed951
+            if(request.getParseObject("choosenProposal") != null && request.getParseObject("choosenSupplier") != user) continue; // (2) Il lavoro è stato assegnato ad un altro fornitore
+
+            final int category = categorizeRequest(request);  // 1 -> aggiudicata, 2-> inviata, 3-> in attesa
+            Log.i("category", request.getString("title") + " " + category);
+
+            final String requestId = request.getObjectId();
+            SupplierHomeListObjectView item = new SupplierHomeListObjectView(getApplicationContext());
+            item.setRequest(request);
+            if (category != 10)
+                item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent;
+                        switch (category) {
+                            case 1:
+                                intent = new Intent(HomeSupplierActivity.this, AcceptedBidRecapSupplierActivity.class);
+                                break;
+                            case 2:
+                                intent = new Intent(HomeSupplierActivity.this, BidRecapSupplierActivity.class);
+                                break;
+                            case 3:
+                                intent = new Intent(HomeSupplierActivity.this, RequestRecapActivity.class);
+                                break;
+                            default:
+                                intent = new Intent();
+                        }
+
+                        intent.putExtra("reqId", requestId);
+                        startActivity(intent);
+                    }
+                });
+            else {
+                item.disable();
+            }
+
+
+            switch(category){
+                case 1: aggiudicate_List.addView(item); agg_number++; break;
+                case 2: inviate_List.addView(item); inv_number++; break;
+                case 10: inviate_List.addView(item); inv_number++; break;
+                case 3: inattesa_List.addView(item); inatt_number++; break;
+            }
+
+        }
+
+        if (agg_number == 0) aggiudicateRelative.setVisibility(View.GONE);
+        else aggiudicateRelative.setVisibility(View.VISIBLE);
+
+        if (inv_number == 0) inviateRelative.setVisibility(View.GONE);
+        else inviateRelative.setVisibility(View.VISIBLE);
+
+        if (inatt_number == 0) inattesaRelative.setVisibility(View.GONE);
+        else inattesaRelative.setVisibility(View.VISIBLE);
+
+
+    }
+
+    public int categorizeRequest(ParseObject request){
+        try {
+            user.fetchIfNeeded();
+        } catch (ParseException e){
+            e.printStackTrace();
+        }
+
+        ArrayList<String> proposalSupplierId = (ArrayList<String>) request.get("proposalSupplierId");
+        if (proposalSupplierId == null) return 3;
+        else if(! proposalSupplierId.contains(user.getObjectId())) return 3; //In attesa
+        ParseObject choosenSupplier = (ParseObject) request.get("choosenSupplier");
+        if (choosenSupplier != null)
+            if(choosenSupplier.equals(user))
+                return 1; //Aggiudicata
+
+        try {
+            Log.i("ids", request.getObjectId() + " - " + user.getObjectId());
+            List<ParseObject> results = ParseQuery.getQuery("Proposal").whereEqualTo("requestId", request).whereEqualTo("supplierId",user).find();
+            Log.i("ProposalsNumber", results.size() + "");
+            for (ParseObject x : results){
+                Log.i("deletedRequest", x.getBoolean("deleted") + " " + x.getBoolean("deletedBySupplier"));
+                if (x.getBoolean("deletedBySupplier")) return 10; // Preventivo annullato da cliente o fornitore
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return 2; //Inviata
+    }
+
+
+    ///////// GESTIONE TOP MENU
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            Intent intent = new Intent(HomeSupplierActivity.this, SupplierProfileActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.switch_profile){
+            switchToClient();
+            finish(); //Finishing this activity to avoid activity pile increment
+        }
+        else if(id == R.id.action_faq){
+            Intent intent = new Intent(HomeSupplierActivity.this, WebViewActivity.class);
+            intent.putExtra("url", getSupplierFaq());
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private String getSupplierFaq(){
+        return getString(R.string.web_view_endpoint) + getString(R.string.faq_fornitore);
+    }
+
+    private void switchToClient(){
+        // Cambio il tipo di utente a client
+        user = ParseUser.getCurrentUser();
+        user.put("type", "client");
+        try{
+            user.save();
+        }
+        catch (ParseException e){
+            Toast.makeText(getApplicationContext(), "C\'è stato un errore durante il salvataggio.", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        int reqNumber = getUserRequestsNumber(user);
+        Log.i("Request cliente", Integer.toString(reqNumber));
+        if (reqNumber == 0){
+            Intent intent = new Intent(HomeSupplierActivity.this, EmptyCustomerHomeActivity.class);
+            startActivity(intent);
+        }
+        else {
+            Intent intent = new Intent(HomeSupplierActivity.this, HomeClientActivity.class);
+            startActivity(intent);
+            //Toast.makeText(getApplicationContext(), "Home cliente (Work in Progress)", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private int getUserRequestsNumber(ParseUser user) {
+        List<ParseObject> list;
+        ArrayList<Integer> illegalStates = new ArrayList<Integer>();
+        illegalStates.add(4);
+        illegalStates.add(5);
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Request");
+        query.whereEqualTo("userId", user);
+        query.whereNotContainedIn("state", illegalStates);
+        query.whereNotEqualTo("confirmUncompleteReq", true);
+        query.include("job");
+        query.include("jobCatId");
+        query.include("choosenProposal");
+        query.include("choosenSupplier");
+        query.orderByDescending("createdAt");
+        try {
+            list = query.find();
+            return list.size();
+        }
+        catch (ParseException e){
+            Log.i("REQUEST_LIST", "FAILED");
+            Log.i("ParseException",e.toString());
+        }
+        return 0;
+    }
+
+    private void setRefreshView(){
+        swipeView = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
+        swipeView.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeView.setRefreshing(true);
+                (new Handler()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        getUserRequests(true);
+                        swipeView.setRefreshing(false);
+                    }
+                });
+            }
+        });
+    }
+
+
+}

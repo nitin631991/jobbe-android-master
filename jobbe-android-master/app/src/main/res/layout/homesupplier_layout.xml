@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_placeholder">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.division70.jobbe.jobbe_git.HomeClientActivity"
+                android:id="@+id/main_rl"
+                    android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/aggiudicate_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Richieste aggiudicate"
+                        android:id="@+id/aggiudicate_tv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="false"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/jobbe_white" />
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aggiudicate_tv"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/aggiudicate_linearlayout">
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inviate_rl"
+                    android:layout_below="@+id/aggiudicate_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Proposte inviate"
+                        android:id="@+id/inviate_tv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="false"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/jobbe_white" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inviate_tv"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/inviate_linearlayout" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inattesa_rl"
+                    android:layout_below="@+id/inviate_rl">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Richieste in attesa"
+                        android:id="@+id/inattesa_tv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="false"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/jobbe_white" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inattesa_tv"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/inattesa_linearlayout" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/empty_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Benvenuto"
+                        android:id="@+id/textView10"
+                        android:layout_marginTop="37dp"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/empty_home_supplier"
+                        android:id="@+id/textView11"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="15dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/central_elems"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/textView11">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Al momento ci sono"
+                            android:id="@+id/textView12"
+                            android:textColor="#FFFFFF"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="245"
+                            android:id="@+id/textView13"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/jobbe_light_blue"
+                            android:textSize="60dp"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/textView12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="potenziali clienti vicino a te"
+                            android:id="@+id/textView14"
+                            android:layout_below="@+id/textView13"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#FFFFFF" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_layout">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tooltip_layout"
+        android:background="#CC670a63"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView10"
+            android:src="@drawable/tooltip_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false"
+            android:scaleType="fitStart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView84"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:text="@string/supplier_tooltip_hint"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok_layout"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ok, ho capito"
+                android:id="@+id/confirm_button"
+                android:textColor="@color/jobbe_orange"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="15dp"
+                android:paddingBottom="25dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/assignedTooltipLayout"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/fakeViewWhen"
+            android:layout_marginTop="120dp"></RelativeLayout>
+
+        <com.venmo.view.TooltipView
+            android:id="@+id/tooltipAssigned"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="Clicca per visualizzare la richiesta e contattare il cliente"
+            android:textColor="@color/jobbe_white"
+            android:gravity="center_vertical"
+            app:tooltipColor="#F27B2C"
+            app:anchoredView="@+id/fakeViewWhen"
+            app:cornerRadius="4dp"
+            app:arrowLocation="top"
+            app:arrowAlignment="end"
+            android:visibility="visible"
+            android:layout_below="@+id/fakeViewWhen"
+            android:layout_marginRight="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

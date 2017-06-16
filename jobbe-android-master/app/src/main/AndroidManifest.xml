@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.division70.jobbe.jobbe_git" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Permission x push -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission android:protectionLevel="signature"
+        android:name="com.division70.jobbe.jobbe_git.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.division70.jobbe.jobbe_git.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:name=".JobbeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/jobbe_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait"
+            android:noHistory="true"/>
+        <activity android:name=".EmptyCustomerHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".JobChooserActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CreateSupplierActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ConfirmationCodeActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CreateCustomerActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SwitchRoleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginCodeActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginPhoneActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EmptySupplierHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ZoneChooserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ZoneRecapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsClientActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestCompletionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestTimingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CustomDateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CustomPlaceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestConfirmationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestRecapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditClientUserDataActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+        <activity android:name=".EditSupplierUserDataActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+
+        <activity android:name=".EditJobActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditJobZoneChooserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BidCreationActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".HomeClientActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProposalsListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BidRecapActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProposalsListActivity" />
+        </activity>
+
+        <activity android:name=".HomeSupplierActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AcceptedBidRecapSupplierActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeSupplierActivity" />
+        </activity>
+        <activity android:name=".BidRecapSupplierActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeSupplierActivity" />
+        </activity>
+        <activity android:name=".SupplierProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeSupplierActivity" />
+        </activity>
+
+        <activity android:name=".RequestsArchiveActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestsArchiveDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobUndoneActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RequestsClientArchiveActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobCompletedActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SupplierReviewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JobNotCompletedActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GpsAlertActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".AlertFromPushActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".AcceptedBidRecapClientActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RelaxActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".PushManagerActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BiographyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ChangePhoneNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <activity android:name=".CustomCameraActivity"
+            android:icon="@drawable/camerachooser_icon"
+            android:label="Jobbe Camera"/>
+
+        <receiver android:name=".SmsReceiver" android:exported="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ROBA X PUSH, DA TENERE IN FONDO AL TAG "application"-->
+
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/icon_push" />
+
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.division70.jobbe.jobbe_git.CustomPushReceiver"
+            android:exported="false"
+            android:enabled="true"
+            >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.division70.jobbe.jobbe_git" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.parse.push.gcm_sender_id"
+            android:value="id:214530483985" />;
+        <!-- FINE ROBA PUSH -->
+    </application>
+
+</manifest>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollRelative">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView9">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/preventivo_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Dettagli della proposta"
+                        android:id="@+id/title_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/title_text">
+
+                        <TextView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Lavoro completo, il costo del materiale è da valutare in base all&apos;esigenza e alle finiture, Stima di tempo: circa 2h di lavoro."
+                            android:id="@+id/bid_detail"
+                            android:layout_alignParentLeft="true" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="100€"
+                                android:id="@+id/bid_price"
+                                android:textSize="20dp"
+                                android:textColor="#35a2cc"
+                                android:layout_centerHorizontal="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="all&apos;ora"
+                                android:id="@+id/bid_price_type"
+                                android:textSize="15dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/bid_price"
+                                android:textColor="#35a2cc" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Informazioni sul fornitore"
+                    android:id="@+id/textView67"
+                    android:layout_below="@+id/preventivo_layout"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/supp_info_linear"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/textView67">
+
+                    <com.division70.jobbe.jobbe_git.RoundedImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/supplier_pic"
+                        android:src="@drawable/placeholder_client"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/supplier_pic"
+                        android:layout_toLeftOf="@+id/phonecall_image">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Mario Bianchi"
+                            android:id="@+id/supplier_name"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:paddingStart="5dp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/job_cat_pic"
+                                android:src="@drawable/wrench" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Idraulico"
+                                android:id="@+id/supplier_job"
+                                android:layout_toRightOf="@+id/job_cat_pic"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:textSize="15dp"
+                                android:textColor="@color/jobbe_light_blue" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="24"
+                                android:id="@+id/textView_numberofreviews"
+                                android:paddingStart="5dp" />
+
+                            <RatingBar style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar"
+                                android:rating="3"
+                                android:layout_toRightOf="@+id/textView_numberofreviews"
+                                android:layout_marginLeft="5dp"
+                                android:progressBackgroundTint="@android:color/transparent"
+                                android:progressTint="@color/jobbe_ratings"
+                                android:stepSize="1" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Professionista"
+                            android:id="@+id/supplier_professionist"
+                            android:background="@color/jobbe_violet"
+                            android:textColor="#ffffff"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="1dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="1dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/phonecall_image"
+                        android:background="@drawable/phone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/supp_info_linear"
+                    android:id="@+id/ratings_layout"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/time_relative"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Puntualità e rispetto delle tempistiche"
+                                android:id="@+id/textView46"
+                                android:layout_gravity="top"
+                                android:layout_toLeftOf="@+id/ratingBar_time"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true" />
+
+                            <RatingBar style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar_time"
+                                android:rating="3"
+                                android:layout_gravity="right"
+                                android:layout_alignParentRight="true"
+                                android:progressBackgroundTint="@android:color/transparent"
+                                android:progressTint="@color/jobbe_ratings"
+                                android:stepSize="1"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/price_relative"
+                            android:layout_below="@+id/time_relative"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Rispetto del prezzo indicato"
+                                android:id="@+id/textView47"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/ratingBar_price"
+                                android:layout_alignParentLeft="true" />
+
+                            <RatingBar style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar_price"
+                                android:rating="3"
+                                android:layout_gravity="right"
+                                android:layout_alignParentRight="true"
+                                android:progressBackgroundTint="@android:color/transparent"
+                                android:progressTint="@color/jobbe_ratings"
+                                android:stepSize="1"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/quality_relative"
+                            android:layout_below="@+id/price_relative"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Qualità del lavoro"
+                                android:id="@+id/textView48"
+                                android:layout_toLeftOf="@+id/ratingBar_quality"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+
+                            <RatingBar style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar_quality"
+                                android:rating="3"
+                                android:layout_gravity="right"
+                                android:layout_alignParentRight="true"
+                                android:progressBackgroundTint="@android:color/transparent"
+                                android:progressTint="@color/jobbe_ratings"
+                                android:stepSize="1"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/courtesy_relative"
+                            android:layout_below="@+id/quality_relative"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Cortesia e disponibilità"
+                                android:id="@+id/textView49"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/ratingBar_courtesy"
+                                android:layout_centerVertical="true" />
+
+                            <RatingBar style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ratingBar_courtesy"
+                                android:rating="3"
+                                android:layout_gravity="right"
+                                android:layout_alignParentRight="true"
+                                android:progressBackgroundTint="@android:color/transparent"
+                                android:progressTint="@color/jobbe_ratings"
+                                android:stepSize="1"
+                                android:layout_centerVertical="true" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mostra biografia"
+                    android:id="@+id/supplier_bio"
+                    android:layout_below="@+id/ratings_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#35a2cc"
+                    android:background="@drawable/gray_selector" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

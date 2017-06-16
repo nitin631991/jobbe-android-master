@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jobbe_violet">#FF670a63</color>
+    <color name="jobbe_light_violet">#762272</color>
+    <color name="jobbe_transparent_violet">#ac7aaa</color>
+    <color name="jobbe_light_blue">#49a0f2</color>
+    <color name="jobbe_white">#ffffff</color>
+    <color name="jobbe_alpha_violet">#22FFFFFF</color>
+    <color name="jobbe_red">#fc193b</color>
+    <color name="jobbe_gray">#dfdfdf</color>
+    <color name="jobbe_ratings">#defcff04</color>
+    <color name="jobbe_transparent_button">#33ffffff</color>
+    <color name="jobbe_gray_bar">#dfdfdf</color>
+    <color name="jobbe_transparent">#00000000</color>
+    <color name="jobbe_holo_back">#fff3f3f3</color>
+    <color name="jobbe_orange">#f27b2c</color>
+</resources>

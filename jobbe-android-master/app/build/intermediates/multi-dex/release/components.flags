@@ -1,0 +1,294 @@
+-injars /home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/transforms/jarMerging/release/jars/1/1f/combined.jar
+-outjars /home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/multi-dex/release/componentClasses.jar
+
+-libraryjars /home/sourcefuse/Android/Sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/multi-dex/release/components.flags
+
+
+-keep class com.division70.jobbe.jobbe_git.JobbeApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.division70.jobbe.jobbe_git.MainActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SplashActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.FirstActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EmptyCustomerHomeActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.JobChooserActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CreateSupplierActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.ConfirmationCodeActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CreateCustomerActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.PhoneNumberActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SwitchRoleActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.LoginCodeActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.LoginPhoneActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EmptySupplierHomeActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.ZoneChooserActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.ZoneRecapActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SettingsClientActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.WebViewActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestCompletionActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestTimingActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CustomDateActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CustomPlaceActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestConfirmationActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestRecapActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EditClientUserDataActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EditSupplierUserDataActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EditJobActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.EditJobZoneChooserActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.BidCreationActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.HomeClientActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.ProposalsListActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.BidRecapActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.HomeSupplierActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.AcceptedBidRecapSupplierActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.BidRecapSupplierActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SupplierProfileActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestsArchiveActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestsArchiveDetailsActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.JobUndoneActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RequestsClientArchiveActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.JobCompletedActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SupplierReviewActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.JobNotCompletedActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.GpsAlertActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.AlertFromPushActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.AcceptedBidRecapClientActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.RelaxActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.PushManagerActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.BiographyActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.ChangePhoneNumberActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CustomCameraActivity {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.SmsReceiver {
+    <init>();
+}
+
+-keep class com.parse.PushService {
+    <init>();
+}
+
+-keep class com.parse.ParsePushBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.division70.jobbe.jobbe_git.CustomPushReceiver {
+    <init>();
+}
+
+-keep class com.parse.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.appinvite.PreviewActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

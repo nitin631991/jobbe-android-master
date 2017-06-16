@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.division70.jobbe.jobbe_git.TimingListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Se la tua richiesta deve essere soddisfatta assolutamente in un giorno e in un&apos;ora specifica.."
+        android:id="@+id/textView44"
+        android:layout_below="@+id/fragment1"
+        android:layout_margin="@dimen/side_margin" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specifica data e fascia oraria"
+        android:id="@+id/custom_date_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView44"
+        android:background="@drawable/blue_selector"
+        android:textColor="@color/jobbe_white"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin" />
+</RelativeLayout>

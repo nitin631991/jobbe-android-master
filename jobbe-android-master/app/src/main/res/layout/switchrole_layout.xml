@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jobbe_violet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Accedi come"
+            android:id="@+id/textView5"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/jobbe_white"
+            android:layout_marginLeft="@dimen/side_margin" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="15dp"
+            android:id="@+id/client_layout"
+            android:background="@color/jobbe_light_violet">
+
+            <View
+                android:background="@color/jobbe_transparent_violet"
+                android:layout_width = "fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/client_icon_layout">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/signup_client_icon"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/client_icon_layout"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Cliente"
+                    android:id="@+id/textView52"
+                    android:textColor="@color/jobbe_light_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/signup_client_label"
+                    android:id="@+id/textView79"
+                    android:textColor="@color/jobbe_white"
+                    android:layout_below="@+id/textView52" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView18"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="15dp" />
+
+            <View
+                android:background="@color/jobbe_transparent_violet"
+                android:layout_width = "fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/client_layout"
+            android:id="@+id/supplier_layout"
+            android:background="@color/jobbe_light_violet">
+
+
+            <View
+                android:background="@color/jobbe_transparent_violet"
+                android:layout_width = "fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/relativeLayout" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView17"
+                    android:src="@drawable/signup_supplier_icon"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/relativeLayout"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Fornitore"
+                    android:id="@+id/textView80"
+                    android:textColor="@color/jobbe_light_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/signup_supplier_label"
+                    android:id="@+id/textView81"
+                    android:textColor="@color/jobbe_white"
+                    android:layout_below="@+id/textView80" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView19"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/supplier_layout"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="La registrazione è gratuita."
+                android:id="@+id/textView82"
+                android:textColor="@color/jobbe_light_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/signup_switch_label"
+                android:id="@+id/textView83"
+                android:textColor="@color/jobbe_white"
+                android:layout_below="@+id/textView82"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

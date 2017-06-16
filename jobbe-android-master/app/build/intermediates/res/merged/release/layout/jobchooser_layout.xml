@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/serchRelLayout"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView20"
+            android:src="@drawable/jobchooser_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="matrix" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/job_tag_suggest"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Cerca ad esempio Idraulico,  Babysitter..."
+            android:textSize="15dp"
+            android:background="@color/jobbe_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Scegli una categoria"
+            android:id="@+id/textView53"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/jobbe_white"
+            android:layout_below="@+id/job_tag_suggest"
+            android:layout_marginTop="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/icons_layout"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="10dp"
+            android:background="#CC762272"
+            android:layout_below="@+id/textView53">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/cat_linear_layout">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.venmo.view.TooltipView
+                android:id="@+id/tooltip2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:text="Clicca per visualizzare i mestieri in questa categoria"
+                android:textColor="@color/jobbe_white"
+                app:tooltipColor="#F27B2C"
+                app:anchoredView="@id/cat_linear_layout"
+                app:cornerRadius="4dp"
+                app:arrowLocation="top"
+                app:arrowAlignment="start"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/tags_list_view"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/job_tag_suggest"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jobs_from_tags_layout"
+            android:layout_below="@+id/job_tag_suggest"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SUGGERIMENTI"
+                android:id="@+id/add_modify_pic"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_margin="5dp" />
+
+            <View
+                android:background="#c4c4c4"
+                android:layout_width = "fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/add_modify_pic" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobs_from_tags_listview"
+                android:layout_below="@+id/add_modify_pic"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+
+        <com.venmo.view.TooltipView
+            android:id="@+id/tooltip1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Scrivi il mestiere che stai cercando oppure seleziona una delle categorie qui sotto"
+            android:textColor="@color/jobbe_white"
+            app:tooltipColor="#F27B2C"
+            app:anchoredView="@id/job_tag_suggest"
+            app:cornerRadius="4dp"
+            app:arrowLocation="top"
+            android:visibility="gone"
+            android:layout_below="@+id/job_tag_suggest"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serchRelLayout"
+        android:id="@+id/job_body_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/body_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/text_layout"
+                android:background="@color/jobbe_light_violet">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Scegli un mestiere"
+                    android:id="@+id/txt_cat_pres"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/jobbe_white"
+                    android:layout_marginLeft="150dp" />
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/jobs_list"
+                android:layout_below="@+id/text_layout"
+                android:layout_alignParentEnd="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="false"
+                android:choiceMode="singleChoice"
+                android:divider="#33ffffff"
+                android:dividerHeight="1dp" />
+
+            <com.venmo.view.TooltipView
+                android:id="@+id/tooltip3"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:paddingTop="8dp"
+                android:text="Clicca per selezionare il mestiere e proseguire con la richiesta"
+                android:textColor="@color/jobbe_white"
+                app:tooltipColor="#F27B2C"
+                app:anchoredView="@id/jobs_list"
+                app:cornerRadius="4dp"
+                app:arrowLocation="top"
+                app:arrowAlignment="start"
+                android:visibility="gone"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:gravity="center_vertical"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="30dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:background="@color/jobbe_violet"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

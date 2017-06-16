@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Jobbe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Jobbe definitive credentials -->
+    <string name="parse_app_id">t4Wl5cWi9IMAOsu3aqnhHE46RuTKyzpgphZpPPqP</string>
+    <string name="parse_client_id">4NxWzZ7jUXOGEMDqpIz74DyecrMdIqcSXbo0eNfX</string>
+
+    <!-- Android credentials -->
+    <!--string name="parse_app_id">zTohPaqYlN7qs93CRWl0SPNY8anRRR73dU1cTJRU</string>
+    <string name="parse_client_id">BdZjWI4Rd880PJBPdnrdFzIvw629lLpzp3YHVW78</string-->
+
+    <!-- iOS credentials -->
+    <!--string name="parse_app_id">pxni0Hye0CYjgMHehMBOehJB2Vol69zClB8h6Aou</string>
+    <string name="parse_client_id">umxwHPteN9TYRYHdvLUTMvW8ViYN3lNP6SUGx5yA</string-->
+
+    <string name="empty_phone_number">Numero di telefono richiesto</string>
+    <string name="empty_code_number">Codice di conferma richiesto</string>
+    <string name="wrong_code_number">Codice errato, riprova</string>
+    <string name="image_loading_error">Il caricamento dell\'immagine non è andato a buon fine, riprova.</string>
+
+    <string name="faq_1">A che cosa serve Jobbe?</string>
+    <string name="faq_answer_1">Jobbe è il servizio che ti permette di trovare l\'aiuto che cerchi, direttamente dalla tua app, senza perdite di tempo</string>
+    <string name="faq_2">Che figure professionali posso cercare su Jobbe?</string>
+    <string name="faq_answer_2">Su Jobbe puoi trovare i professionisti classici come l\'idraulico, l\'elettricista, l\'antennista e il meccanico ma anche badanti, insegnanti, chef, assistenti e molto altro. Scopri tutte le professioni sfogliando le categorie</string>
+    <string name="pic_path">/Jobbe/userpic.jpg</string>
+
+    <string name="empty_home_supplier">Jobbe è lo strumento perfetto per trovare nuovi clienti nella tua zona.</string>
+
+    <string name="geo_dialog">Localizzazione attiva. Per trovare i professionisti vicini a te...</string>
+    <string name="title_activity_zone_chooser">Map</string>
+    
+    <string name="zonechooser_text">Di sotto trovi l\'elenco delle zone di intervento in cui possono arrivarti richieste di interventi.
+                                    Puoi selezionare una o più zone.
+                                    Le zone in grigio sono le zone che saranno attive a breve, per le quali puoi già registrarti.</string>
+
+    <string name="activityrecap_text">Se questo è il tuo lavoro professionale indicalo qui sotto.
+                                    Servirà ai clienti per valutare meglio i preventivi che riceveranno.</string>
+    <string name="title_activity_maps1">Map</string>
+
+    <string name="invite_downloadlink">http://www.myjobbe.com/download</string>
+
+    <string name="invite_clientmessagetext">Io sto utilizzando Jobbe per trovare i professionisti quando ne ho bisogno. Provala gratuitamente: \n</string>
+    <string name="invite_suppliermessagetext">Io sto utilizzando Jobbe per trovare i nuovi clienti vicino a me. Provala gratuitamente: \n</string>
+    <string name="invite_emailsubject">Prova Jobbe!!!</string>
+    <string name="req_creation_title_hint">Inserisci qui il titolo, ad esempio: riparazione lavastoviglie.</string>
+    <string name="req_creation_desc_hint">Inserisci qui la descrizione del tuo problema.\nMeglio riuscirai a
+                                    descrivere il problema, più riceverai proposte accurate.</string>
+    <string name="title_activity_edit_job">EditJob</string>
+
+    <string name="request_delition_alert_title">Vuoi eliminare la richiesta?</string>
+    <string name="request_delition_alert_desc">La richiesta non sarà più visibile nè recuperabile.
+                                    Non invierai quindi la proposta.</string>
+
+    <string name="proposal_delition_alert_title">Vuoi eliminare la proposta?</string>
+    <string name="proposal_delition_alert_desc">La proposta non sarà più recuperabile.</string>
+
+    <string name="phone_call_alert_title">Chiama</string>
+
+    <string name="job_done_alert_title">Hai svolto questo lavoro?</string>
+    <string name="job_done_alert_desc">Se hai svolto il lavoro presso il cliente, clicca conferma. Il cliente potrà dare una valutazione al lavoro
+                                    svolto per aumentare il tuo rating.</string>
+
+    <string name="job_not_done_alert_title">Conferma lavoro non svolto</string>
+    <string name="job_not_done_alert_desc">Il fornitore ci ha comunicato che il lavoro "#LAVORO#" non verrà svolto per il motivo: "#MOTIVO#". Confermi?</string>
+
+    <string name="bid_creation_details_hint">Inserisci qui la descrizione dell\'intervento da svolgere e il relativo prezzo.
+                                    Più sarai accurato, meglio il cliente riuscirà a valutare la tua proposta e a scegliere il tuo intervento.</string>
+
+    <string name="bid_creation_alert_title">Vuoi inviare questa proposta?</string>
+    <string name="bid_creation_alert_desc">Controlla i dati della tua proposta. Il cliente lo riceverà e lo valuterà insieme a quello degli altri fornitori disponibili ad eseguire il lavoro.</string>
+
+    <string name="title_activity_home_client">HomeClientActivity</string>
+    <string name="title_activity_proposals_list">ProposalsListActivity</string>
+    <string name="supplier_review_suggestion">Scegli un punteggio da 1 (pessimo) a 5 (molto buono) cliccando sulla stellina corrispondente.</string>
+
+    <string name="job_undone_note_hint">Inserisci il motivo per cui non è stato completato il lavoro.</string>
+    <string name="title_activity_requests_archive">Richieste aggiudicate</string>
+
+    <string name="job_completed_desc">Valuta l\'intervento del fornitore assegnando un voto da 1 a 5.\n
+                                    Il rating ti permette di scegliere per il prossimo intervento il miglior fornitore in base al rapporto qualità/prezzo.</string>
+    <string name="job_not_completed_desc">Il fornitore non ha svolto questo lavoro e ha indicato questa motivazione:</string>
+
+    <string name="no_proposal_placeholder_text">Al momento non ci sono ancora proposte.\nAttiva le notifiche per sapere subito quando ricvi una proposta di intervento.</string>
+
+    <!--
+    <string name="web_view_endpoint">https://jobbe-dev.parseapp.com/</string>
+    -->
+    <string name="web_view_endpoint">http://www.myjobbe.com/</string>
+    <string name="faq_cliente">faq-cliente</string>
+    <string name="faq_fornitore">faq-fornitore</string>
+    <string name="terms">terms</string>
+    <string name="privacy">privacy</string>
+    
+    <string name="signup_client_label">Utilizzo jobbe per trovare\nprofessionisti vicino a me</string>
+    <string name="signup_supplier_label">Utilizzo jobbe per trovare\nclienti vicino a me</string>
+    <!--<string name="signup_switch_label">La creazione di un account cliente\nti permette di essere anche fornitore,\ne viceversa. Inizia subito!</string>-->
+    <string name="signup_switch_label">la creazione di un account Fornitore ti permette di essere anche Cliente</string>
+
+    <string name="relax_title">Rilassati, ora\nci pensa Jobbe!</string>
+    <string name="relax_desc">Riceverai le proposte dai\nfornitori e sarai tu a scegliere\nquello che preferisci.</string>
+    <string name="gpsalert_client_title">Consenti a Jobbe di conoscere la tua posizione</string>
+    <string name="gpsalert_client_desc">"La tua posizione serve solo per consegnare le tue richieste ai professionisti che lavorano nella tua zona quando userai Jobbe per cercare aiuto e non per fornirne.</string>
+    <string name="gpsalert_supplier_title">Trova i clienti\nvicino a te</string>
+    <string name="gpsalert_supplier_desc">La tua posizione non sarà visibile sull\'app, ci servirà solo per mostrarti i clienti e le richieste di intervento più vicine a te.</string>
+    <string name="offline_default_alert">È necessaria una connessione Internet attiva per utilizzare questa funzionalità</string>
+
+    <string name="change_phone_number_desc">Inserisci qui il tuo vecchio numero di telefono e il nuovo al quale verrà associato il tuo account su jobbe\n\n
+                                        Una volta completato il procedimento ti arriverà una mail all\'indirizzo specificato in fase di registrazione con il link di conferma.</string>
+    
+    <string name="analytics_cat_flow_client">flow_cliente</string>
+    <string name="analytics_cat_pref_client">preferenze_cliente</string>
+    <string name="analytics_cat_usability_client">usabilità_cliente</string>
+    <string name="analytics_cat_quality_client">qualità_cliente</string>
+    <string name="analytics_cat_pref_supp">preferenze_Fornitore</string>
+
+    <string name="analytics_action_click">click</string>
+    <string name="analytics_action_lavoro">lavoro</string>
+    <string name="analytics_action_categoria">categoria</string>
+    <string name="analytics_action_search">search</string>
+    <string name="analytics_action_urgenza">urgenza</string>
+
+    <string name="jobbe_mail">support@myjobbe.com</string>
+
+    <string name="supplier_tooltip_hint">Benvenuto!\nQui troverai le richieste\ndei clienti della tua zona</string>
+    <string name="first_page_disclaimer_line_1">Cliccando registrati dichiari di aver letto ed accettato i</string>
+    <string name="first_page_disclaimer_line_2">nostri <a style="color:blue" href="https://jobbe-dev.parseapp.com/terms">Termini del servizio</a> e la nostra <a style="color:blue" href="https://jobbe-dev.parseapp.com/privacy">Privacy Policy</a></string>
+
+    <!--done by Genuinesoft-->
+    <string name="select_checkbox">Si prega di accettare i Termini del servizio e Privacy Policy.</string>
+    <string name="alert_play_services_missing">App necessità di servizi di gioco corsa Jobbe, Si prega di installare il dispositivo in servizi di gioco</string>
+
+
+</resources>

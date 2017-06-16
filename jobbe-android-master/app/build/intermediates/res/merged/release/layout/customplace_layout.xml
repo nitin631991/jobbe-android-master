@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_margin="@dimen/side_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Luogo dell&apos;intervento"
+                android:id="@+id/textView58"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Indica la zona in cui richiedi l&apos;intervento. Non è un indirizzo vincolante, ci serve per sapere se ci sono professionisti nella tua zona."
+                android:id="@+id/req_desc"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/textView58"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" android:id="@+id/map"
+                tools:context="com.division70.jobbe.jobbe_git.CustomPlaceActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_below="@+id/req_desc"
+                android:layout_marginBottom="5dp" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:id="@+id/listView"
+                android:layout_below="@+id/map" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newpos_layout"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/listView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/località_layout">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:ems="10"
+                        android:id="@+id/newplace_txt"
+                        android:hint="Località"
+                        android:textSize="15dp"
+                        android:layout_below="@+id/textView55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="LOCALITA&apos;"
+                        android:id="@+id/textView55"
+                        android:textStyle="bold"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/località_layout"
+                    android:id="@+id/via_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="VIA"
+                        android:id="@+id/textView57"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress"
+                        android:ems="10"
+                        android:id="@+id/newaddress_txt"
+                        android:layout_below="@+id/textView57"
+                        android:hint="Via"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_height"
+                    android:id="@+id/google_list"
+                    android:visibility="gone"
+                    android:layout_below="@+id/località_layout"
+                    android:background="#22000000"
+                    android:drawSelectorOnTop="false" />
+
+                <!--android:nestedScrollingEnabled="true"-->
+
+            </RelativeLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fatto"
+                android:id="@+id/fatto_button"
+                android:background="@drawable/blue_selector"
+                android:textColor="@color/jobbe_white"
+                android:layout_marginTop="@dimen/side_margin"
+                android:layout_below="@+id/newpos_layout" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/mipmap-hdpi/menu_tooltip_faq.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/src/main/res/mipmap-hdpi/menu_tooltip_faq.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/mipmap-hdpi/menu_switch_icon.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/src/main/res/mipmap-hdpi/menu_switch_icon.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/mipmap-hdpi/jobbe_icon.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/src/main/res/mipmap-hdpi/jobbe_icon.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/mipmap-hdpi/menu_tooltip_switch.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/src/main/res/mipmap-hdpi/menu_tooltip_switch.png"
+    }
+]

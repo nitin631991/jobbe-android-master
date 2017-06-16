@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView12"
+            android:scrollbars="none"
+            android:layout_marginLeft="@dimen/side_margin"
+            android:layout_marginRight="@dimen/side_margin"
+            android:paddingTop="@dimen/side_margin"
+            android:paddingBottom="@dimen/side_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/user_layout"
+                    android:layout_marginBottom="@dimen/side_margin">
+
+                    <com.division70.jobbe.jobbe_git.RoundedImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/ClientSettingsImageView"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/placeholder_client"
+                        android:layout_centerVertical="true" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:id="@+id/userDataLayout"
+                        android:layout_toEndOf="@+id/ClientSettingsImageView"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nome e Cognome"
+                            android:id="@+id/ClientSettingsNameTextView"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="false"
+                            android:singleLine="true"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="email@email.com"
+                            android:id="@+id/ClientSettingsMailTextView"
+                            android:layout_below="@+id/ClientSettingsNameTextView"
+                            android:layout_alignParentRight="false"
+                            android:singleLine="true"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#929292" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="+39 "
+                            android:id="@+id/textView16"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/ClientSettingsMailTextView"
+                            android:textColor="#929292" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1234567890"
+                            android:id="@+id/ClientSettingsPhoneTextView"
+                            android:singleLine="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignTop="@+id/textView16"
+                            android:layout_toRightOf="@+id/textView16"
+                            android:textColor="#929292" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttons_rl"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/user_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Archivio"
+                        android:id="@+id/textView72"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/archive_layout"
+                        android:layout_marginTop="10dp">
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Archivio ultime richieste"
+                            android:id="@+id/textView4"
+                            android:layout_centerVertical="true" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Termini e Privacy Policy"
+                        android:id="@+id/textView46"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/terms_layout">
+
+                            <View
+                                android:background="@color/jobbe_gray_bar"
+                                android:layout_width = "fill_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentTop="true"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Termini e Condizioni del servizio"
+                                android:id="@+id/textView74"
+                                android:layout_centerVertical="true" />
+
+                            <View
+                                android:background="@color/jobbe_gray_bar"
+                                android:layout_width = "fill_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/privacy_layout" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Privacy Policy"
+                                android:id="@+id/textView75"
+                                android:layout_centerVertical="true" />
+
+                            <View
+                                android:background="@color/jobbe_gray_bar"
+                                android:layout_width = "fill_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Altro"
+                        android:id="@+id/textView73"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="@dimen/side_margin" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/settings_layout">
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Modifica profilo personale"
+                            android:id="@+id/textView41"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/share_layout">
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Invita amici"
+                            android:id="@+id/textView78"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/contattaci" >
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Contattaci"
+                            android:id="@+id/textView3"
+                            android:layout_centerVertical="true" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Log Out"
+                        android:id="@+id/button6"
+                        android:visibility="gone"
+                        android:textColor="@color/jobbe_red"
+                        android:layout_marginTop="@dimen/side_margin"
+                        android:background="@drawable/gray_selector"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Passa a fornitore"
+                        android:id="@+id/button7"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/blue_selector"
+                        android:textColor="@color/jobbe_white"
+                        android:layout_marginTop="@dimen/side_margin"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_alignParentEnd="false"
+        android:background="#CCffffff"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

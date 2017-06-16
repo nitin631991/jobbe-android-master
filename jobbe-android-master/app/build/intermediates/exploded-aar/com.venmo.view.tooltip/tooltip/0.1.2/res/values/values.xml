@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TooltipView"><attr format="reference" name="anchoredView"/><attr format="dimension" name="cornerRadius"/><attr format="color" name="tooltipColor"/><attr format="dimension" name="arrowHeight"/><attr format="dimension" name="arrowWidth"/><attr format="dimension" name="arrowAlignmentOffset"/><attr format="integer" name="arrowLocation"><enum name="top" value="0"/><enum name="bottom" value="1"/></attr><attr format="enum" name="arrowAlignment"><enum name="start" value="0"/><enum name="center" value="1"/><enum name="end" value="2"/><enum name="anchored_view" value="3"/></attr></declare-styleable>
+    <!-- From: file:/Users/ronshapiro/code/open-source/tooltip-view/library/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="tooltip_default_arrow_height">8dp</dimen>
+    <dimen name="tooltip_default_arrow_width">16dp</dimen>
+    <dimen name="tooltip_default_corner_radius">4dp</dimen>
+    <dimen name="tooltip_default_offset">0dp</dimen>
+    <integer name="tooltip_default_arrow_alignment">3</integer>
+    <integer name="tooltip_default_arrow_location">1</integer>
+</resources>

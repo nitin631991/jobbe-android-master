@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/drawable-xxxhdpi/places_ic_search.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/places_ic_search.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/drawable-xxxhdpi/places_ic_clear.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/places_ic_clear.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/drawable-xxxhdpi/powered_by_google_light.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/powered_by_google_light.png"
+    },
+    {
+        "merged": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/res/merged/release/drawable-xxxhdpi/powered_by_google_dark.png",
+        "source": "/home/sourcefuse/Downloads/jobbe-android-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/drawable-xxxhdpi/powered_by_google_dark.png"
+    }
+]

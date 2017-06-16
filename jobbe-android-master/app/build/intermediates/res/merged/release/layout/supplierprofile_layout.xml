@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/side_margin"
+    android:paddingBottom="@dimen/side_margin">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/supp_info_linear">
+
+                <com.division70.jobbe.jobbe_git.RoundedImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/SuppSettingsImageView"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/userDataLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView39"
+                        android:textColor="#000000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="10"
+                            android:id="@+id/ratnumber_tv" />
+
+                        <RatingBar style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar"
+                            android:rating="3"
+                            android:layout_toEndOf="@id/ratnumber_tv"
+                            android:layout_marginLeft="10dp"
+                            android:progressTint="@color/jobbe_ratings"
+                            android:secondaryProgressTint="@android:color/transparent"
+                            android:stepSize="1" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/supplier_job" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/phonenumber_text" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="I tuoi mestieri"
+                android:id="@+id/textView19"
+                android:layout_below="@+id/supp_info_linear"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView19"
+                android:id="@+id/jobData_rl"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:background="@color/jobbe_gray_bar"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/job_image"
+                    android:layout_centerVertical="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/job_image"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/modifica"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView42"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:text="Caricamento..."
+                        android:maxLines="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView43"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_below="@+id/textView42"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignLeft="@+id/textView42" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Modifica >"
+                    android:id="@+id/modifica"
+                    android:layout_gravity="right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:textColor="#35a2cc" />
+
+                <View
+                    android:background="@color/jobbe_gray_bar"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/jobData_rl"
+                android:id="@+id/ratings_rl"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Rating"
+                    android:id="@+id/textView45"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/ratings_layout"
+                    android:layout_below="@+id/textView45">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/punctuality_view" >
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Puntualità e rispetto delle tempistiche"
+                            android:id="@+id/textView47"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/ratingBar_time" />
+
+                        <RatingBar style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar_time"
+                            android:rating="3"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:progressTint="@color/jobbe_ratings"
+                            android:secondaryProgressTint="@android:color/transparent"
+                            android:stepSize="1" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/price_view">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rispetto del prezzo indicato"
+                            android:id="@+id/textView57"
+                            android:layout_gravity="top"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/ratingBar_price" />
+
+                        <RatingBar style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar_price"
+                            android:rating="3"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:progressTint="@color/jobbe_ratings"
+                            android:secondaryProgressTint="@android:color/transparent"
+                            android:stepSize="1" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/quality_view" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Qualità del lavoro"
+                            android:id="@+id/textView48"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/ratingBar_quality" />
+
+                        <RatingBar style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar_quality"
+                            android:rating="3"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:progressTint="@color/jobbe_ratings"
+                            android:secondaryProgressTint="@android:color/transparent"
+                            android:stepSize="1" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/courtesy_view" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Cortesia e disponibilità"
+                            android:id="@+id/textView49"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/ratingBar_courtesy" />
+
+                        <RatingBar style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBar_courtesy"
+                            android:rating="3"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:progressTint="@color/jobbe_ratings"
+                            android:secondaryProgressTint="@android:color/transparent"
+                            android:stepSize="1" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/review_view" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Valutazioni ottenute"
+                            android:id="@+id/textView50"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/textView_numberofreviews"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="x/y"
+                            android:id="@+id/textView_numberofreviews"
+                            android:layout_gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+
+                        <View
+                            android:background="@color/jobbe_gray_bar"
+                            android:layout_width = "fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Archivio"
+                android:id="@+id/textView51"
+                android:textStyle="bold"
+                android:layout_below="@+id/ratings_rl"
+                android:layout_marginTop="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/archive_layout"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView51">
+
+                <View
+                    android:background="@color/jobbe_gray_bar"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Archivio ultime richieste"
+                    android:id="@+id/textView4"
+                    android:layout_centerVertical="true" />
+
+                <View
+                    android:background="@color/jobbe_gray_bar"
+                    android:layout_width = "fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Termini e Privacy Policy"
+                android:id="@+id/textView46"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/archive_layout"
+                android:layout_marginTop="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/conditions_layout"
+                android:layout_below="@+id/textView46">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/terms_layout">
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Termini e Condizioni del servizio"
+                        android:id="@+id/textView74"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/privacy_layout" >
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Privacy Policy"
+                        android:id="@+id/textView75"
+                        android:layout_centerVertical="true" />
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altro"
+                android:id="@+id/textView20"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/conditions_layout"
+                android:layout_marginTop="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/altro_layout"
+                android:layout_below="@+id/textView20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/settings_layout">
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Modifica dati anagrafici"
+                        android:id="@+id/textView41"
+                        android:layout_centerVertical="true" />
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/share_layout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Invita amici"
+                        android:id="@+id/textView58"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/contattaci" >
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Contattaci"
+                        android:id="@+id/textView3"
+                        android:layout_centerVertical="true" />
+
+                    <View
+                        android:background="@color/jobbe_gray_bar"
+                        android:layout_width = "fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Logout"
+                android:id="@+id/button13"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/altro_layout"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/jobbe_red"
+                android:layout_marginTop="@dimen/side_margin"
+                android:visibility="gone"
+                android:background="@drawable/gray_selector"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passa a cliente"
+                android:id="@+id/button14"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button13"
+                android:textColor="@color/jobbe_white"
+                android:background="@drawable/blue_selector"
+                android:layout_marginTop="@dimen/side_margin"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingSpinnerLayout"
+        android:layout_alignParentEnd="false"
+        android:background="#CCffffff"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

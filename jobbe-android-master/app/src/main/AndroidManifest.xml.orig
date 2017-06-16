@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.division70.jobbe.jobbe_git" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".JobbeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EmptyCustomerHomeActivity" />
+        <activity android:name=".SupplierProfileActivity" />
+        <activity
+            android:name=".JobChooserActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".CreateSupplierActivity" />
+        <activity
+            android:name=".ConfirmationCodeActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".CreateCustomerActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".SwitchRoleActivity" />
+        <activity
+            android:name=".LoginCodeActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".LoginPhoneActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".EmptySupplierHomeActivity" />
+        <activity android:name=".ZoneChooserActivity" />
+        <activity android:name=".ZoneRecapActivity" />
+        <activity android:name=".SettingsClientActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".RequestCompletionActivity" />
+        <activity android:name=".RequestTimingActivity" />
+        <activity android:name=".CustomDateActivity" />
+        <activity android:name=".CustomPlaceActivity" />
+        <activity android:name=".RequestConfirmationActivity" />
+        <activity android:name=".RequestRecapActivity" />
+        <activity android:name=".EditClientUserDataActivity" />
+        <activity android:name=".EditSupplierUserDataActivity" />
+        <activity android:name=".EditJobActivity" />
+        <activity android:name=".EditJobZoneChooserActivity" />
+<<<<<<< HEAD
+        <activity
+            android:name=".BidCreationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".HomeClientActivity" />
+        <activity android:name=".HomeSupplierActivity" />
+        <activity android:name=".BidRecapLayout" />
+=======
+        <activity android:name=".BidCreationActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".HomeClientActivity"/>
+        <activity android:name=".HomeSupplierActivity"/>
+        <activity android:name=".BidRecapActivity" />
+        <activity android:name=".BidRecapSupplierActivity" />
+        <activity android:name=".AcceptedBidRecapSupplierActivity" />
+>>>>>>> acddc268654359b3f108bb795e0c6bfbc1d53795
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ProposalsListActivity"
+            android:label="@string/title_activity_proposals_list" >
+        </activity>
+        <activity
+            android:name=".RequestsArchiveActivity"
+            android:label="@string/title_activity_requests_archive" >
+        </activity>
+    </application>
+
+</manifest>

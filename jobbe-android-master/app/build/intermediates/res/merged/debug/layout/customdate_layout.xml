@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/side_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/picker_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="SPECIFICA DATA E ORA"
+                    android:id="@+id/customdate_title"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollIndicators="right"
+                    android:id="@+id/picker_container">
+
+                    <DatePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/datePicker"
+                        android:layout_alignParentStart="false"
+                        android:datePickerMode="spinner"
+                        android:calendarViewShown="false"
+                        android:scrollIndicators="top"
+                        android:spinnersShown="true"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TimePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timePicker"
+                        android:timePickerMode="spinner"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/datePicker" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fine"
+                android:id="@+id/customdate_fine"
+                android:layout_below="@+id/picker_layout"
+                android:background="@drawable/blue_selector"
+                android:textColor="@color/jobbe_white"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
